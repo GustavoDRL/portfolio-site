@@ -1,0 +1,6 @@
+# Allow all user agents full access
+User-agent: *
+Allow: /
+
+# Sitemap location (replace with your actual deployed URL)
+Sitemap: http://localhost:3000/sitemap.xml 

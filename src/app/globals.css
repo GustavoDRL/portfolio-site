@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import custom fonts here if needed */
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;700&family=Montserrat:wght@900&family=Work+Sans:wght@400&display=swap'); */
+
+body {
+  @apply bg-background text-textDark font-body leading-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+h1 {
+  @apply text-h1 tracking-h1;
+}
+
+h2 {
+  @apply text-h2;
+}
+
+h3 {
+  @apply text-h3;
+}
+
+/* Add other global styles or base component styles here */ 
