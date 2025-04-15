@@ -241,7 +241,7 @@ const AboutContent: React.FC = () => {
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                   <div>
-                    <h3 className="text-2xl font-semibold text-primary mb-1">Bachelor's Degrees</h3>
+                    <h3 className="text-2xl font-semibold text-primary mb-1">Bachelor&apos;s Degrees</h3>
                     <p className="text-textDark font-medium">Federal University of ABC (UFABC)</p>
                   </div>
                   <div className="flex flex-wrap gap-2">
