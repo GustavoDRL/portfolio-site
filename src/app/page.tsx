@@ -1,11 +1,13 @@
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/sections/Hero';
+import AboutPreview from '@/components/sections/AboutPreview';
 import ProjectGrid from '@/components/sections/ProjectGrid'; // Import ProjectGrid
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
+      <AboutPreview />
       <ProjectGrid /> {/* Add ProjectGrid component */}
       {/* Remove placeholder */}
       {/* 

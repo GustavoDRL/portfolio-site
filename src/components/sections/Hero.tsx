@@ -12,6 +12,12 @@ const Hero: React.FC<HeroProps> = ({
   title = "Gustavo Del Rio Lima", // Default title from LaTeX
   subtitle = "AI & Robotics Specialist" // Placeholder subtitle
 }) => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about-preview');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center overflow-hidden">
       {/* Background Video */}
@@ -48,16 +54,18 @@ const Hero: React.FC<HeroProps> = ({
       </div>
       
       {/* Animated Scroll Down Indicator */}
-      <motion.div
+      <motion.button
+        onClick={scrollToAbout}
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.5, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+        transition={{ delay: 1, duration: 1.5, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-full p-2"
+        aria-label="Scroll to About section"
       >
         <svg className="w-6 h-6 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
-      </motion.div>
+      </motion.button>
     </section>
   );
 };
