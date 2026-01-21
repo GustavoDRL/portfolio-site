@@ -10,7 +10,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ 
   title = "Gustavo Del Rio Lima", // Default title from LaTeX
-  subtitle = "AI & Robotics Specialist" // Placeholder subtitle
+  subtitle = "AI Specialist" // Placeholder subtitle
 }) => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about-preview');
@@ -56,13 +56,16 @@ const Hero: React.FC<HeroProps> = ({
       {/* Animated Scroll Down Indicator */}
       <motion.button
         onClick={scrollToAbout}
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1.5, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-full p-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, y: [0, 150, 0] }}
+        transition={{
+          opacity: { delay: 1, duration: 0.5 },
+          y: { delay: 1.5, duration: 0.9, repeat: Infinity, ease: "easeInOut" }
+        }}
+        className="absolute bottom-[130px] left-1/2 transform -translate-x-1/2 z-20 hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-full p-2"
         aria-label="Scroll to About section"
       >
-        <svg className="w-6 h-6 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-9 h-9 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
       </motion.button>

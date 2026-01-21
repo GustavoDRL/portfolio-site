@@ -56,10 +56,18 @@ src/
 
 ### Component Patterns
 - All components use TypeScript interfaces for props
-- Layout component handles page transitions and scroll restoration
+- **Layout wrapper**: Each page must wrap its content in the `Layout` component from `@/components/layout/Layout` (handles Header, Footer, and page transitions)
 - Data files export typed interfaces and data arrays
 - Components use `'use client'` directive when needed for hooks/animations
+- Project content uses `react-markdown` with `@tailwindcss/typography` for rendering markdown
+
+### Static Generation
+- Project pages use `generateStaticParams()` for static site generation
+- Related projects are computed at build time based on category matching
 
 ### Path Aliases
 - `@/*` maps to `./src/*` for clean imports
 - Use path aliases consistently: `@/components/`, `@/data/`
+
+### Environment Variables
+- `NEXT_PUBLIC_SITE_URL` - Base URL for Open Graph images (defaults to localhost:3000)

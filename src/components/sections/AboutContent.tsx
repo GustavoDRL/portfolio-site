@@ -71,16 +71,6 @@ const AboutContent: React.FC = () => {
               >
                 <motion.div variants={itemVariants} className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                    <FaRobot size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-1">Robotics Specialist</h3>
-                    <p className="text-textDark">Specializing in autonomous systems, control algorithms, and robotic integration</p>
-                  </div>
-                </motion.div>
-                
-                <motion.div variants={itemVariants} className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <FaBrain size={24} />
                   </div>
                   <div>
@@ -88,7 +78,7 @@ const AboutContent: React.FC = () => {
                     <p className="text-textDark">Developing intelligent solutions with Generative AI and machine learning</p>
                   </div>
                 </motion.div>
-                
+
                 <motion.div variants={itemVariants} className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <FaCode size={24} />
@@ -98,7 +88,7 @@ const AboutContent: React.FC = () => {
                     <p className="text-textDark">Creating complete digital solutions with modern web technologies</p>
                   </div>
                 </motion.div>
-                
+
                 <motion.div variants={itemVariants} className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <FaUsers size={24} />
@@ -106,6 +96,16 @@ const AboutContent: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-1">Team Leader</h3>
                     <p className="text-textDark">Experienced in leading technical teams to achieve exceptional results</p>
+                  </div>
+                </motion.div>
+
+                <motion.div variants={itemVariants} className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                    <FaRobot size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-primary mb-1">Robotics Specialist</h3>
+                    <p className="text-textDark">Specializing in autonomous systems, control algorithms, and robotic integration</p>
                   </div>
                 </motion.div>
               </motion.div>
@@ -245,7 +245,7 @@ const AboutContent: React.FC = () => {
                     <p className="text-textDark font-medium">Federal University of ABC (UFABC)</p>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm whitespace-nowrap font-medium">2018-2025</span>
+                    <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm whitespace-nowrap font-medium">2018-2026</span>
                     <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm whitespace-nowrap font-medium">2018-2023</span>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const AboutContent: React.FC = () => {
                 <div className="space-y-4">
                   <div className="pl-4 border-l-2 border-primary/50">
                     <h4 className="text-lg font-semibold text-primary mb-1">Instrumentation, Automation and Robotics Engineering</h4>
-                    <p className="text-textDark">Focus on robotics, control systems, and automation (2018-2025)</p>
+                    <p className="text-textDark">Focus on robotics, control systems, and automation (2018-2026)</p>
                   </div>
                   
                   <div className="pl-4 border-l-2 border-primary/50">

@@ -42,30 +42,32 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, relatedProjects 
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">{project.description}</p>
         </div>
 
-        {/* Featured Image or Video */}
-        <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] mb-12 rounded-lg overflow-hidden shadow-lg">
-          {isVideo ? (
-            <video
-              src={project.featuredImage}
-              className="absolute inset-0 w-full h-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-            />
-          ) : (
-            <Image
-              src={project.featuredImage}
-              alt={project.title}
-              fill
-              style={{ objectFit: objectFitStyle }}
-              priority // Prioritize loading the main image
-              placeholder="blur" 
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" // Simple grey placeholder
-            />
-          )}
-        </div>
+        {/* Featured Image or Video - Hidden for Academic Publications */}
+        {project.category !== 'Academic Publications' && (
+          <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] mb-12 rounded-lg overflow-hidden shadow-lg">
+            {isVideo ? (
+              <video
+                src={project.featuredImage}
+                className="absolute inset-0 w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              />
+            ) : (
+              <Image
+                src={project.featuredImage}
+                alt={project.title}
+                fill
+                style={{ objectFit: objectFitStyle }}
+                priority // Prioritize loading the main image
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" // Simple grey placeholder
+              />
+            )}
+          </div>
+        )}
 
         {/* Main Content Area (2-column layout) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
