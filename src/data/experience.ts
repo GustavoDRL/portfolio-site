@@ -14,11 +14,24 @@ export interface ExperienceItem {
 // Data extracted/interpreted from LaTeX main.tex (lines ~125-138, ~243-265)
 export const experienceData: ExperienceItem[] = [
   {
+    company: "Vanguarda Consórcio",
+    role: "AI specialist & Tech Lead",
+    period: { start: "2025", end: null },
+    description: "Responsible for the development of all technical solutions at the company. Building enterprise AI systems and full-stack applications for consortium sales operations.",
+    highlights: [
+      "Leading all technical development initiatives across the organization",
+      "Architected enterprise multi-agent RAG system with WhatsApp Business API integration",
+      "Developed full-stack Seller Service Center with React, Fastify, and PostgreSQL",
+      "Implemented CrewAI-based agents for sales, support, and lead qualification"
+    ],
+    technologies: ["Python", "TypeScript", "FastAPI", "React", "Vue.js", "CrewAI", "FAISS", "PostgreSQL", "Redis", "Docker", "WhatsApp Business API"],
+    category: "Professional",
+  },
+  {
     company: "EY",
     role: "Research and Development Analyst",
-    period: { start: "2024", end: null }, // Assuming start year from LaTeX
-    description: "Developing innovative solutions focusing on Generative AI and robotics. Leading software development initiatives combining AI and automation.",
-    // Highlights could be extracted from project descriptions (e.g., VR assistant, Financial Analysis)
+    period: { start: "2024", end: "2025" },
+    description: "Developed innovative solutions focusing on Generative AI and robotics. Led software development initiatives combining AI and automation.",
     highlights: [
       "Led development of VR intelligent assistant POC",
       "Implemented multi-agent financial analysis system",

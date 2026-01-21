@@ -70,12 +70,22 @@ const AboutPreview: React.FC = () => {
             </motion.p>
             
             {/* Key Skills */}
-            <motion.div 
-              variants={containerVariants} 
-              className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8"
+            <motion.div
+              variants={containerVariants}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8"
             >
-              <motion.div variants={itemVariants} className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary">
+              <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 text-center sm:text-left">
+                <div className="p-2 bg-primary/10 rounded-lg text-primary flex-shrink-0">
+                  <FaBrain size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary">AI</h3>
+                  <p className="text-sm text-textDark">Generative AI & ML</p>
+                </div>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 text-center sm:text-left">
+                <div className="p-2 bg-primary/10 rounded-lg text-primary flex-shrink-0">
                   <FaCode size={20} />
                 </div>
                 <div>
@@ -83,19 +93,9 @@ const AboutPreview: React.FC = () => {
                   <p className="text-sm text-textDark">Complete Solutions</p>
                 </div>
               </motion.div>
-              
-              <motion.div variants={itemVariants} className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary">
-                  <FaBrain size={20} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-primary">AI Engineering</h3>
-                  <p className="text-sm text-textDark">Generative AI & ML</p>
-                </div>
-              </motion.div>
-              
-              <motion.div variants={itemVariants} className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary">
+
+              <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 text-center sm:text-left">
+                <div className="p-2 bg-primary/10 rounded-lg text-primary flex-shrink-0">
                   <FaRobot size={20} />
                 </div>
                 <div>

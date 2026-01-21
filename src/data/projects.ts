@@ -14,7 +14,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
-  category: 'Autonomous Systems' | 'Artificial Intelligence' | 'Robotics' | 'Web Development' | 'Hardware' | 'Automation'; // Add more as needed
+  category: 'Autonomous Systems' | 'Artificial Intelligence' | 'Robotics' | 'Web Development' | 'Hardware' | 'Automation' | 'Academic Publications';
   tags: string[];
   description: string; // Short description for card/grid
   content: string; // Full content in Markdown for detail page
@@ -67,7 +67,7 @@ Led the development of a 1/10 scale autonomous racing vehicle for F1TENTH compet
       { type: "github", url: "https://github.com/GustavoDRL/f1tenth_code.git", label: "f1tenth-code" }
     ],
     featured: true,
-    order: 1,
+    order: 4,
   },
   {
     id: "vr-assistant",
@@ -111,7 +111,7 @@ Developed a proof-of-concept VR-based intelligent assistant system integrating r
       // Add others like Speech Recognition, TTS if desired
     ],
     featured: true,
-    order: 2,
+    order: 5,
   },
   {
     id: "financial-analysis",
@@ -140,7 +140,7 @@ Developed an advanced multi-agent system utilizing CrewAI and GPT-4 Turbo to pro
 ## Research Impact
 
 The project contributed to the company's research in multi-agent applications, particularly in the areas of agent coordination and specialized task distribution. The findings helped shape the development of subsequent multi-agent products and established best practices for implementing complex agent interactions in production environments.`,
-    featuredImage: "/images/projects/financial_analysis.png",
+    featuredImage: "/images/projects/financial_analysis.webp",
     technologies: [
       { name: "CrewAI", category: "Framework" },
       { name: "LangChain", category: "Framework" },
@@ -153,7 +153,7 @@ The project contributed to the company's research in multi-agent applications, p
       { name: "Streamlit", category: "Framework" },
     ],
     featured: true,
-    order: 3,
+    order: 6,
   },
   {
     id: "meeting-intelligence",
@@ -182,7 +182,7 @@ Engineered a comprehensive meeting analysis system deployed on Jetson Nano hardw
 *   Computer Vision Models, Emotion Detection Networks
 *   Privacy-Preserving Data Handling
 *   Azure Blob Storage, Real-time Data Streaming`,
-    featuredImage: "/images/projects/meeting_intelligence.png",
+    featuredImage: "/images/projects/meeting_intelligence.webp",
     technologies: [
       { name: "Jetson Nano", category: "Platform" },
       { name: "CUDA", category: "Framework" },
@@ -196,7 +196,7 @@ Engineered a comprehensive meeting analysis system deployed on Jetson Nano hardw
       { name: "Python", category: "Language" },
     ],
     featured: true,
-    order: 4,
+    order: 7,
   },
   {
     id: "humanoid-robot",
@@ -229,7 +229,7 @@ Led a specialized three-person engineering team in conducting a comprehensive sy
       { name: "Human-Robot Interaction", category: "Tool" },
     ],
     featured: false,
-    order: 3,
+    order: 8,
   },
   {
     id: "combat-robotics",
@@ -273,7 +273,7 @@ Led the development of four combat robots, implementing comprehensive solutions 
       { type: "github", url: "https://github.com/project-neon/combate.git", label: "project-neon-combate" }
     ],
     featured: true,
-    order: 6,
+    order: 9,
   },
   {
     id: "weather-monitoring",
@@ -310,7 +310,7 @@ Engineered an advanced weather monitoring and equipment protection system for a 
       { name: "Power Management", category: "Tool" },
     ],
     featured: false,
-    order: 7,
+    order: 10,
   },
   {
     id: "safety-switch",
@@ -348,7 +348,7 @@ Engineered and established a manufacturing process for a revolutionary high-curr
       { name: "Manufacturing Process Design", category: "Tool" },
     ],
     featured: false,
-    order: 8,
+    order: 11,
   },
   {
     id: "wumpus-dql",
@@ -390,7 +390,7 @@ Developed an advanced artificial intelligence system applying Deep Q-Learning (D
         { type: "github", url: "https://github.com/GustavoDRL/Wumpus-World-DQL.git", label: "Wumpus-DQN" }
     ],
     featured: false,
-    order: 9,
+    order: 12,
   },
   {
     id: "home-automation",
@@ -433,6 +433,173 @@ Research project that developed and implemented in a scale model of a comprehens
       { name: "Material-UI", category: "Library" },
     ],
     featured: false,
-    order: 10,
+    order: 13,
+  },
+  {
+    id: "stroke-subtype-classification",
+    title: "Classification of Ischemic Stroke Subtypes Using Machine Learning",
+    slug: "ml-stroke-subtype-classification",
+    category: "Academic Publications",
+    tags: ["Machine Learning", "Ischemic Stroke", "Random Forest", "XGBoost", "Healthcare AI", "OCSP Classification", "Neuroscience"],
+    description: "Published research applying ML models to classify ischemic stroke subtypes using the International Stroke Trial dataset, achieving perfect classification with Random Forest and XGBoost.",
+    content: `## Abstract
+
+Ischemic stroke subtype classification supports prognosis and treatment but can be challenging in acute care. This study develops and evaluates Machine Learning models for automated OCSP-based ischemic stroke subtype classification using clinical data.
+
+Using 13,056 cases from the International Stroke Trial, we trained Random Forest, XGBoost, Logistic Regression, Support Vector Machine, and k-Nearest Neighbors models. Performance was assessed using 10-fold stratified cross-validation.
+
+## Key Results
+
+*   **Random Forest & XGBoost**: Perfect performance (all metrics = 1.000 ± 0.000)
+*   **Logistic Regression & SVM**: Near-perfect (accuracy ≈ 0.998, AUC-ROC = 1.000)
+*   **KNN**: Lower sensitivity for POCS subtype (macro average = 0.898)
+
+Clinical variables strongly associated with stroke subtypes (p < 0.001) included level of consciousness, visible infarct on CT, atrial fibrillation, and neurological deficits (face, arm/hand, leg/foot, dysphasia, hemianopia, visuospatial disorder, brainstem/cerebellar signs).
+
+## Conclusion
+
+ML models, particularly Random Forest and XGBoost, enable highly accurate ischemic stroke subtype classification using routine clinical data. These findings support the development of decision support tools that can assist clinicians in low-resource or time-sensitive contexts.
+
+## Publication Details
+
+*   **Journal**: Brazilian Journal of Neurosurgery (JBNC)
+*   **Citation**: J Bras Neurocirur 36(3):328-337, 2025
+*   **DOI**: 10.22290/jbnc.2025.360312
+*   **Received**: May 13, 2025
+*   **Accepted**: June 4, 2025
+
+## Authors
+
+Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho Alberto³, Luiza Carolina Moreira Marcolino³, Larissa Batista Xavier³, Carlos Umberto Pereira⁴, Murillo Martins Correia⁵, Roberto Alexandre Dezena³˒⁵
+
+*¹Faculty of Medicine, UFTM | ²Center for Mathematics, Computing and Cognition, UFABC | ³Hospital das Clínicas, UFTM | ⁴Neurosurgery Division, UFS | ⁵Neurosurgery Division, UFTM*`,
+    featuredImage: "/images/articles/stroke-classification-cover.png",
+    technologies: [
+      { name: "Python", category: "Language" },
+      { name: "scikit-learn", category: "Library" },
+      { name: "Random Forest", category: "AI Model" },
+      { name: "XGBoost", category: "AI Model" },
+      { name: "Logistic Regression", category: "AI Model" },
+      { name: "SVM", category: "AI Model" },
+      { name: "Data Analysis", category: "Tool" },
+    ],
+    links: [
+      { type: "paper", url: "https://jbnc.org.br/artigo/classification-of-ischemic-stroke-subtypes-using-machine-learning-insights-from-the-international-stroke-trial-dataset/1735", label: "Read Paper (JBNC)" },
+      { type: "paper", url: "https://doi.org/10.22290/jbnc.2025.360312", label: "DOI" },
+    ],
+    featured: true,
+    order: 3,
+  },
+  {
+    id: "vanguarda-seller-center",
+    title: "Vanguarda Seller Service Center",
+    slug: "vanguarda-seller-service-center",
+    category: "Web Development",
+    tags: ["Full Stack", "Node.js", "React", "TypeScript", "Fastify", "Prisma", "Docker", "PostgreSQL", "Redis", "Vanguarda Consórcio"],
+    description: "Full-stack seller service center developed for Vanguarda Consórcio, enabling complete consortium sales management through a modern React interface and a robust Node.js backend.",
+    content: `## Project Overview
+
+Developed for **Vanguarda Consórcio**, this Seller Service Center is a comprehensive consortium administration system designed to streamline sales operations and partner management. The platform combines a modern React frontend with a high-performance Node.js backend, all containerized with Docker for reliable deployment.
+
+## Backend
+
+Built with Fastify and TypeScript, the backend provides a fast and scalable API layer. It uses Prisma ORM for database operations with PostgreSQL, ensuring type-safe data access. Redis powers the background job queue through BullMQ, handling automated data imports and synchronization tasks. The system implements a robust two-layer authentication combining API tokens with JWT-based user authentication. OpenTelemetry integration enables comprehensive observability and performance monitoring.
+
+## Frontend
+
+The user interface is built with React 19 and TypeScript, using Vite for fast development and optimized builds. Tailwind CSS provides a clean, responsive design system. React Query manages server state and caching, while Recharts powers the interactive dashboards and analytics visualizations. The application implements role-based routing, showing different interfaces for authenticated and non-authenticated users.
+
+## Key Features
+
+*   **Consortium Management**: Complete lifecycle management for consortium operations
+*   **Partner Administration**: Management of partners and partner categories with detailed tracking
+*   **Sales Pipeline**: End-to-end sales process with external webhook integrations
+*   **Dashboard & Analytics**: Real-time metrics and performance visualization
+*   **Document Signing**: Integration with ClickSign for digital contract signatures
+*   **Data Synchronization**: Automated imports from external systems
+
+## Infrastructure
+
+The entire application runs in Docker containers, orchestrating PostgreSQL, Redis, backend, and frontend services. Multi-stage Docker builds ensure optimized production images, while built-in health checks monitor database connectivity and service availability.`,
+    featuredImage: "/images/projects/vanguarda-seller-center.png",
+    technologies: [
+      { name: "TypeScript", category: "Language" },
+      { name: "Node.js", category: "Framework" },
+      { name: "Fastify", category: "Framework" },
+      { name: "React", category: "Framework" },
+      { name: "Vite", category: "Tool" },
+      { name: "Prisma", category: "Library" },
+      { name: "PostgreSQL", category: "Tool" },
+      { name: "Redis", category: "Tool" },
+      { name: "BullMQ", category: "Library" },
+      { name: "Docker", category: "Tool" },
+      { name: "Tailwind CSS", category: "Framework" },
+    ],
+    featured: true,
+    order: 2,
+  },
+  {
+    id: "vanguarda-multiagents",
+    title: "Vanguarda Multi-Agents",
+    slug: "vanguarda-multi-agents",
+    category: "Artificial Intelligence",
+    tags: ["Multi-Agent", "RAG", "LLM", "CrewAI", "FastAPI", "Vue.js", "WhatsApp API", "FAISS", "Python", "Vanguarda Consórcio"],
+    description: "Enterprise multi-agent RAG system developed for Vanguarda Consórcio with WhatsApp Business API integration, featuring specialized AI agents for sales, support, and lead qualification.",
+    content: `## Project Overview
+
+Developed for **Vanguarda Consórcio**, this is an enterprise-grade multi-agent RAG (Retrieval Augmented Generation) system with WhatsApp Business API integration. Built on FastAPI (backend) and Vue.js 3 (frontend), it provides intelligent customer interaction through specialized AI agents.
+
+## Multi-Agent Architecture
+
+The system employs a **CrewAI-based multi-agent system** with specialized agents for different tasks:
+
+*   **TriagemAgent**: Initial classification and intelligent routing of incoming messages
+*   **VendasAgent**: Sales qualification, lead conversion, and opportunity management
+*   **DuvidasAgent**: Question answering and customer education using RAG
+*   **EncerramentoAgent**: Conversation finalization and CRM integration
+
+## Core Technical Features
+
+*   **LLM Router**: Intelligent routing between Groq (primary) and OpenAI (fallback) with circuit breaker pattern
+*   **Document Processing**: PDF handling with Docling, smart chunking (1200 tokens), and thumbnail generation
+*   **Vector Store**: FAISS-based similarity search with OpenAI embeddings (text-embedding-3-small, 768D)
+*   **Session Management**: Redis-based with in-memory fallback for reliability
+
+## Document Management System
+
+*   **Unified Service**: Complete document lifecycle management (upload, processing, chunking, embeddings, retrieval)
+*   **Smart Chunking**: Automatic text extraction with boundary detection (1200 chars, 150 overlap)
+*   **Hybrid Architecture**: FAISS + PostgreSQL for optimal performance
+*   **TTL-based Caching**: 300-second cache for query optimization
+
+## WhatsApp Integration
+
+*   **Webhook Configuration**: ngrok tunnel for development, Meta Developer Console integration
+*   **Security**: Signature verification for all incoming webhooks
+*   **Smart Routing**: Content-based routing with session continuity
+*   **CRM Integration**: Automatic lead tracking and conversation history
+
+## Enterprise Features
+
+*   **Proactive Monitoring**: Real-time worker health tracking with automatic recovery
+*   **Alert System**: Notifications for stopped workers, stalled processing, and error spikes
+*   **RAG Synchronization**: Automatic FAISS-PostgreSQL sync checking and repair
+*   **Cost Tracking**: LLM usage monitoring for budget management`,
+    featuredImage: "/images/projects/vanguarda-multiagents.png",
+    technologies: [
+      { name: "Python", category: "Language" },
+      { name: "FastAPI", category: "Framework" },
+      { name: "Vue.js 3", category: "Framework" },
+      { name: "TypeScript", category: "Language" },
+      { name: "CrewAI", category: "Framework" },
+      { name: "FAISS", category: "Library" },
+      { name: "OpenAI API", category: "AI Model" },
+      { name: "Groq API", category: "AI Model" },
+      { name: "Redis", category: "Tool" },
+      { name: "PostgreSQL", category: "Tool" },
+      { name: "WhatsApp Business API", category: "Platform" },
+    ],
+    featured: true,
+    order: 1,
   },
 ]; 
