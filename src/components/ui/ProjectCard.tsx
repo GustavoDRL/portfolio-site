@@ -36,9 +36,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   // Check if the featured media is a video
   const isVideo = project.featuredImage.match(/\.(mp4|webm|ogg)$/i);
   
-  // Check if this is the weather monitoring project to use contain instead of cover
-  const isWeatherProject = project.id === "weather-monitoring";
-  const objectFitStyle = isWeatherProject ? "contain" : "cover";
+  // Check if image should use contain instead of cover
+  const shouldUseContain = project.id === "weather-monitoring" || project.category === "Academic Publications";
+  const objectFitStyle = shouldUseContain ? "contain" : "cover";
 
   return (
     <motion.div
@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
     >
       <Link href={`/projects/${project.slug}`} className="block">
-        <div className="relative w-full h-48 sm:h-56 md:h-64">
+        <div className={`relative w-full h-48 sm:h-56 md:h-64 ${project.category === 'Academic Publications' ? 'bg-slate-50 p-2' : ''}`}>
           {isVideo ? (
             <video
               src={project.featuredImage}

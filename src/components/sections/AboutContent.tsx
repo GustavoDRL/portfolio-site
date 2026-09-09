@@ -316,6 +316,90 @@ const AboutContent: React.FC = () => {
                 </div>
               </motion.div>
               
+              {/* Academic Publications */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-lg shadow-lg border border-gray-200 border-l-4 border-l-primary"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                  <h3 className="text-2xl font-semibold text-primary">Academic Publications & Scientific Research</h3>
+                  <a
+                    href="https://orcid.org/0009-0009-0336-273X"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primaryLight transition-colors"
+                  >
+                    <span>ORCID: 0009-0009-0336-273X</span>
+                    <span className="text-xs px-2 py-0.5 rounded bg-primary/10 text-primary">Verified</span>
+                  </a>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="pl-4 border-l-2 border-primary/40">
+                    <h4 className="text-lg font-semibold text-primary mb-1">
+                      Machine Learning Models to Differentiate Hemorrhagic from Ischemic Stroke: Insights from the International Stroke Trial
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-1">
+                      <span className="italic">Brazilian Journal of Neurosurgery (JBNC)</span>, Vol. 37(2), pp. 169–181, 2026
+                    </p>
+                    <p className="text-xs text-textDark mb-2">
+                      S. P. P. Silveira, <strong className="text-primary">G. R. Lima</strong>, G. B. Alberto, L. C. M. Marcolino, L. B. Xavier, C. U. Pereira, M. M. Correia, R. A. Dezena.
+                    </p>
+                    <a
+                      href="https://doi.org/10.22290/jbnc.2026.02031047"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-semibold text-primary hover:underline"
+                    >
+                      DOI: 10.22290/jbnc.2026.02031047 &rarr;
+                    </a>
+                  </div>
+
+                  <div className="pl-4 border-l-2 border-primary/40">
+                    <h4 className="text-lg font-semibold text-primary mb-1">
+                      Machine Learning Models for Six-Month Mortality Prediction After Ischemic Stroke: Insights from the International Stroke Trial
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-1">
+                      <span className="italic">Brazilian Journal of Neurosurgery (JBNC)</span>, Vol. 37(1), pp. 20–34, 2026
+                    </p>
+                    <p className="text-xs text-textDark mb-2">
+                      S. P. P. Silveira, <strong className="text-primary">G. R. Lima</strong>, G. B. Alberto, L. C. M. Marcolino, L. B. Xavier, C. U. Pereira, M. M. Correia, R. A. Dezena.
+                    </p>
+                    <a
+                      href="https://doi.org/10.22290/jbnc.2026.08121508"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-semibold text-primary hover:underline"
+                    >
+                      DOI: 10.22290/jbnc.2026.08121508 &rarr;
+                    </a>
+                  </div>
+
+                  <div className="pl-4 border-l-2 border-primary/40">
+                    <h4 className="text-lg font-semibold text-primary mb-1">
+                      Classification of Ischemic Stroke Subtypes Using Machine Learning: Insights from the International Stroke Trial Dataset
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-1">
+                      <span className="italic">Brazilian Journal of Neurosurgery (JBNC)</span>, Vol. 36(3), pp. 328–337, 2025
+                    </p>
+                    <p className="text-xs text-textDark mb-2">
+                      S. P. P. Silveira, <strong className="text-primary">G. R. Lima</strong>, G. B. Alberto, L. C. M. Marcolino, L. B. Xavier, C. U. Pereira, M. M. Correia, R. A. Dezena.
+                    </p>
+                    <a
+                      href="https://doi.org/10.22290/jbnc.2025.360312"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-semibold text-primary hover:underline"
+                    >
+                      DOI: 10.22290/jbnc.2025.360312 &rarr;
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+              
               {/* Languages */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

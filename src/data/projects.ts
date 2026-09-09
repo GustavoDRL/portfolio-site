@@ -67,7 +67,7 @@ Led the development of a 1/10 scale autonomous racing vehicle for F1TENTH compet
       { type: "github", url: "https://github.com/GustavoDRL/f1tenth_code.git", label: "f1tenth-code" }
     ],
     featured: true,
-    order: 4,
+    order: 6,
   },
   {
     id: "vr-assistant",
@@ -111,7 +111,7 @@ Developed a proof-of-concept VR-based intelligent assistant system integrating r
       // Add others like Speech Recognition, TTS if desired
     ],
     featured: true,
-    order: 5,
+    order: 7,
   },
   {
     id: "financial-analysis",
@@ -153,7 +153,7 @@ The project contributed to the company's research in multi-agent applications, p
       { name: "Streamlit", category: "Framework" },
     ],
     featured: true,
-    order: 6,
+    order: 10,
   },
   {
     id: "meeting-intelligence",
@@ -196,7 +196,7 @@ Engineered a comprehensive meeting analysis system deployed on Jetson Nano hardw
       { name: "Python", category: "Language" },
     ],
     featured: true,
-    order: 7,
+    order: 11,
   },
   {
     id: "humanoid-robot",
@@ -229,7 +229,7 @@ Led a specialized three-person engineering team in conducting a comprehensive sy
       { name: "Human-Robot Interaction", category: "Tool" },
     ],
     featured: false,
-    order: 8,
+    order: 13,
   },
   {
     id: "combat-robotics",
@@ -273,7 +273,7 @@ Led the development of four combat robots, implementing comprehensive solutions 
       { type: "github", url: "https://github.com/project-neon/combate.git", label: "project-neon-combate" }
     ],
     featured: true,
-    order: 9,
+    order: 12,
   },
   {
     id: "weather-monitoring",
@@ -433,7 +433,7 @@ Research project that developed and implemented in a scale model of a comprehens
       { name: "Material-UI", category: "Library" },
     ],
     featured: false,
-    order: 13,
+    order: 15,
   },
   {
     id: "stroke-subtype-classification",
@@ -489,6 +489,122 @@ Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho 
     ],
     featured: true,
     order: 3,
+  },
+  {
+    id: "stroke-mortality-prediction",
+    title: "Machine Learning Models for Six-Month Mortality Prediction After Ischemic Stroke",
+    slug: "ml-stroke-six-month-mortality-prediction",
+    category: "Academic Publications",
+    tags: ["Machine Learning", "Stroke Mortality", "Prognosis", "Logistic Regression", "SHAP", "Healthcare AI", "International Stroke Trial", "Neuroscience"],
+    description: "Published research analyzing 12,936 patients from the International Stroke Trial using 7 supervised ML algorithms and nested cross-validation to predict six-month post-stroke mortality.",
+    content: `## Abstract
+
+Accurate prediction of post-stroke mortality is essential for guiding clinical treatment, patient communication, and optimal healthcare resource allocation. Machine learning approaches may improve prognostic accuracy using routine admission data.
+
+This study compares the performance of different ML algorithms, evaluates model discrimination and calibration, and determines the prognostic importance of key baseline clinical variables in predicting six-month mortality after ischemic stroke.
+
+## Methods
+
+We analyzed 12,936 patients from the International Stroke Trial (IST) using nineteen baseline clinical variables (demographics, consciousness, stroke subtype, neurological deficits, atrial fibrillation, and early interventions).
+
+Seven supervised ML algorithms — Logistic Regression, SGD, Support Vector Machines (SVM), Multilayer Perceptron (MLP), Random Forest, Gradient Boosting, and XGBoost — were trained with and without resampling techniques (SMOTE, ADASYN, Tomek Links, ENN). Nested cross-validation ensured unbiased evaluation using AUC-ROC, AUC-PR, calibration curves, and clinical metrics.
+
+## Key Results
+
+*   **Linear Parsimony**: Logistic Regression and SGD achieved top performance (AUC-ROC ≈ 0.76–0.77) with strong probability calibration.
+*   **Negative Predictive Value**: Achieved NPV > 92%, offering dependable clinical risk stratification.
+*   **Predictor Hierarchy (SHAP)**: Confirmed patient age, level of consciousness at admission, and OCSP stroke subtype as dominant prognostic predictors. Complex non-linear models showed no systematic advantage over parsimonious linear models.
+
+## Conclusion
+
+Parsimonious linear models provide robust, interpretable, and computationally lightweight prediction of six-month mortality after ischemic stroke, directly supporting bedside clinical decision-making.
+
+## Publication Details
+
+*   **Journal**: Brazilian Journal of Neurosurgery (JBNC)
+*   **Citation**: J Bras Neurocirur 37(1):20-34, 2026
+*   **DOI**: 10.22290/jbnc.2026.08121508
+*   **Accepted**: September 29, 2025
+
+## Authors
+
+Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho Alberto³, Luiza Carolina Moreira Marcolino³, Larissa Batista Xavier³, Carlos Umberto Pereira⁴, Murillo Martins Correia³, Roberto Alexandre Dezena³
+
+*¹Faculty of Medicine, UFTM | ²Center for Mathematics, Computing and Cognition, UFABC | ³Hospital das Clínicas, UFTM | ⁴Neurosurgery Division, UFS*`,
+    featuredImage: "/images/articles/stroke-mortality-prediction-cover.png",
+    technologies: [
+      { name: "Python", category: "Language" },
+      { name: "scikit-learn", category: "Library" },
+      { name: "Logistic Regression", category: "AI Model" },
+      { name: "XGBoost", category: "AI Model" },
+      { name: "Random Forest", category: "AI Model" },
+      { name: "SHAP", category: "Library" },
+      { name: "Data Analysis", category: "Tool" },
+    ],
+    links: [
+      { type: "paper", url: "https://jbnc.org.br/artigo/machine-learning-models-for-six-month-mortality-prediction-after-ischemic-stroke-insights-from-the-international-stroke-trial/1761", label: "Read Paper (JBNC)" },
+      { type: "paper", url: "https://doi.org/10.22290/jbnc.2026.08121508", label: "DOI" },
+    ],
+    featured: true,
+    order: 4,
+  },
+  {
+    id: "stroke-differentiation",
+    title: "Machine Learning Models to Differentiate Hemorrhagic from Ischemic Stroke",
+    slug: "ml-differentiate-hemorrhagic-ischemic-stroke",
+    category: "Academic Publications",
+    tags: ["Machine Learning", "Stroke Differentiation", "Gradient Boosting", "SHAP", "Healthcare AI", "International Stroke Trial", "Neuroscience"],
+    description: "Published research evaluating machine learning models integrating clinical variables and early radiological markers to differentiate hemorrhagic from ischemic stroke under extreme class imbalance.",
+    content: `## Abstract
+
+Hemorrhagic stroke, although less frequent than ischemic stroke, accounts for a disproportionate share of stroke-related mortality and disability. Early differentiation is critical for clinical management and acute-phase interventions.
+
+This study evaluates machine learning models integrating routine clinical variables and early radiological markers (visible infarct on CT) for classifying hemorrhagic vs. ischemic stroke using the International Stroke Trial (IST) dataset.
+
+## Methods
+
+After exclusions, 12,229 patients were analyzed (11,866 ischemic; 363 hemorrhagic). Nested stratified cross-validation assessed Logistic Regression, Support Vector Machines, Random Forest, Gradient Boosting, Multilayer Perceptron, and XGBoost.
+
+To address severe class imbalance (~3% hemorrhagic), multiple resampling techniques (SMOTE, ADASYN, Tomek Links, ENN, and hybrids) were compared. Probabilities were calibrated and model interpretability evaluated with SHAP values.
+
+## Key Results
+
+*   **Top Performing Model**: Gradient Boosting with Edited Nearest Neighbors (ENN) achieved the best discrimination (AUC-ROC = 0.746; sensitivity = 0.796; specificity = 0.580).
+*   **High Negative Predictive Value**: NPV was typically high across most models (often ≥0.98), providing clinical safety against misclassifying hemorrhagic cases.
+*   **Explainability (SHAP)**: Identified "visible infarct on CT" as the dominant predictor, followed by systolic blood pressure and specific neurological deficits.
+
+## Conclusion
+
+Machine learning models achieve moderate discrimination under extreme clinical imbalance. They offer valuable decision support to complement neuroimaging, particularly in resource-limited acute care settings.
+
+## Publication Details
+
+*   **Journal**: Brazilian Journal of Neurosurgery (JBNC)
+*   **Citation**: J Bras Neurocirur 37(2):169-181, 2026
+*   **DOI**: 10.22290/jbnc.2026.02031047
+*   **Accepted**: November 2, 2025
+
+## Authors
+
+Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho Alberto³, Luiza Carolina Moreira Marcolino³, Larissa Batista Xavier³, Carlos Umberto Pereira⁴, Murillo Martins Correia⁵, Roberto Alexandre Dezena⁶
+
+*¹Faculty of Medicine, UFTM | ²Center for Mathematics, Computing and Cognition, UFABC | ³Hospital das Clínicas, UFTM | ⁴Neurosurgery Division, UFS | ⁵Neurosurgery Division, UFTM | ⁶Discipline of Neurosurgery, UFTM*`,
+    featuredImage: "/images/articles/stroke-differentiation-cover.png",
+    technologies: [
+      { name: "Python", category: "Language" },
+      { name: "scikit-learn", category: "Library" },
+      { name: "Gradient Boosting", category: "AI Model" },
+      { name: "XGBoost", category: "AI Model" },
+      { name: "SHAP", category: "Library" },
+      { name: "Imbalanced-Learn", category: "Library" },
+      { name: "Data Analysis", category: "Tool" },
+    ],
+    links: [
+      { type: "paper", url: "https://jbnc.org.br/artigo/machine-learning-models-to-differentiate-hemorrhagic-from-ischemic-stroke-insights-from-the-international-stroke-trial/1777", label: "Read Paper (JBNC)" },
+      { type: "paper", url: "https://doi.org/10.22290/jbnc.2026.02031047", label: "DOI" },
+    ],
+    featured: true,
+    order: 5,
   },
   {
     id: "vanguarda-seller-center",
