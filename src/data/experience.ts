@@ -17,13 +17,13 @@ export const experienceData: ExperienceItem[] = [
     company: "Vanguarda Consórcio",
     role: "Chief Technology Officer (CTO)",
     period: { start: "2026", end: null },
-    description: "Promoted to CTO after spearheading the company's enterprise AI turnaround. Head of technology strategy and engineering for the official Shineray Brasil consortium administrator, commanding a 5-engineer squad across architecture, full-stack systems, and production AI.",
+    description: "Promoted to CTO after spearheading the company's enterprise AI turnaround. Steer corporate technology strategy and lead engineering for the official Shineray Brasil consortium network across 490 dealerships nationwide, commanding a 5-engineer squad across architecture, full-stack systems, and production AI.",
     highlights: [
-      "Steer corporate technical strategy and command 5-person engineering squad, establishing proprietary tech as the core growth engine for the official Shineray Brasil consortium network across 490 dealerships",
+      "Steer corporate technical strategy and command 5-person engineering squad, establishing proprietary tech as the core growth engine for the official Shineray Brasil consortium network across 490 dealerships nationwide",
       "Architected and deployed full-lifecycle quota platform (Go, Python, React, Vue.js), unifying dealership operations from point-of-sale to contemplation with complete end-to-end transparency",
       "Engineered automated credit underwriting and analytics pipelines, transforming high-volume transactional data into actionable executive intelligence and accelerating proposal clearance by ~60%",
       "Orchestrated production multi-agent sales platform (CrewAI, LangGraph, GPT-4o via WhatsApp Business API), automating ~70% of initial lead qualification and customer acquisition",
-      "Institutionalized company-wide LLMOps (prompt caching, dynamic model routing, fallback circuit breakers), driving ~50% operational cost reduction while maintaining 99.9% production uptime"
+      "Institutionalized company-wide LLMOps (prompt caching, dynamic model routing, fallback circuit breakers), driving ~50% operational cost reduction while sustaining 99.9% production uptime"
     ],
     technologies: ["Go", "Python", "FastAPI", "Django", "React", "Vue.js", "CrewAI", "LangGraph", "RAG/FAISS", "LLMOps", "PostgreSQL", "Redis", "Docker", "Stripe"],
     category: "Professional",
@@ -32,26 +32,26 @@ export const experienceData: ExperienceItem[] = [
     company: "Vanguarda Consórcio",
     role: "GenAI Engineering Lead",
     period: { start: "2025", end: "2026" },
-    description: "Spearheaded Vanguarda's enterprise AI turnaround and designed the core microservices architecture, laying the technical and operational foundation that led to promotion to CTO.",
+    description: "Spearheaded Vanguarda's enterprise AI turnaround and designed core distributed microservices, laying the architectural and operational foundation that resulted in rapid promotion to CTO.",
     highlights: [
       "Promoted to CTO after spearheading Vanguarda's enterprise AI turnaround, architecting core distributed microservices (FastAPI with 103 endpoints, PostgreSQL, Redis, Docker)",
-      "Built production enterprise RAG engine with FAISS vector store and hybrid retrieval, delivering <100ms semantic search and sub-5s end-to-end response latency with rigorous guardrails",
+      "Built production enterprise RAG engine with FAISS vector store and hybrid retrieval, delivering <100ms semantic search and sub-5s response latency with rigorous guardrails",
       "Architected full-stack Seller Service Center (React 19, Fastify, Prisma, BullMQ, Redis) streamlining partner administration and automated CRM ingestion"
     ],
     technologies: ["Python", "FastAPI", "React", "Vue.js", "CrewAI", "FAISS", "PostgreSQL", "Redis", "Docker", "WhatsApp Business API"],
     category: "Professional",
   },
   {
-    company: "EY",
+    company: "EY (Ernst & Young)",
     role: "Research and Development Analyst",
     period: { start: "2024", end: "2025" },
-    description: "Developed innovative solutions focusing on Generative AI and robotics. Led software development initiatives combining AI and automation.",
+    description: "Architected enterprise AI solutions, multi-agent frameworks, and MLOps infrastructure impacting over 1,400 professionals, presenting to executive leadership across Fortune 500 clients.",
     highlights: [
-      "Led development of VR intelligent assistant POC",
-      "Implemented multi-agent financial analysis system",
-      "Engineered meeting intelligence system on Jetson Nano"
+      "Architected enterprise AI infrastructure using Azure ML with MLOps pipelines, implementing CI/CD for GenAI solutions impacting 1,400+ professionals",
+      "Developed LLMOps workflows with multi-agent frameworks (LangGraph, CrewAI, AutoGen) for POCs fundamental in multi-million dollar agribusiness and banking deals",
+      "Represented EY before 1,000+ business leaders presenting LLMs and AI governance to CEOs of Brazil's largest companies"
     ],
-    technologies: ["Generative AI", "Robotics", "Python", "CrewAI", "LangChain", "GPT-4", "Computer Vision", "Jetson Nano"],
+    technologies: ["Azure ML", "MLOps", "Generative AI", "LangGraph", "CrewAI", "AutoGen", "Python", "Docker", "AI Governance"],
     category: "Professional",
   },
   {
@@ -97,8 +97,12 @@ export const experienceData: ExperienceItem[] = [
     company: "Globant",
     role: "Junior Full Stack Developer",
     period: { start: "2022", end: "2023" },
-    description: "Developed complete digital solutions using HTML, CSS, JavaScript, and Python. Conducted data analysis to optimize campaigns and support strategic decisions.",
-    technologies: ["HTML", "CSS", "JavaScript", "Python", "Data Analysis"],
+    description: "Engineered scalable web applications and medical information systems for Fortune 500 healthcare clients.",
+    highlights: [
+      "Developed global medical information system for Johnson & Johnson, delivering pharmaceutical data and resources to healthcare professionals across 72 countries",
+      "Architected scalable web infrastructure supporting 300+ simultaneous users with robust pipelines eliminating critical failures during demand peaks"
+    ],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Python", "Data Analysis", "REST APIs", "CI/CD"],
     category: "Professional",
   },
   // Add Academic projects like F1TENTH, Safety Switch, Wumpus, Home Automation if desired under 'Academic' category
