@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiLinkedin, FiGithub } from 'react-icons/fi'; // Use Fi prefix for Feather Icons
-import { SiMedium } from 'react-icons/si'; // Medium doesn't have a Feather icon, use Simple Icons
+import { SiMedium, SiOrcid } from 'react-icons/si'; // Medium and ORCID from Simple Icons
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -8,6 +8,7 @@ const Footer: React.FC = () => {
   const linkedinUrl = "https://www.linkedin.com/in/gustavodrl/"; 
   const githubUrl = "https://github.com/GustavoDRL"; // Add your GitHub URL
   const mediumUrl = "https://medium.com/@gustavodelrio"; 
+  const orcidUrl = "https://orcid.org/0009-0009-0336-273X";
 
   return (
     <footer className="bg-accent2 text-textDark py-6 mt-12">
@@ -32,6 +33,15 @@ const Footer: React.FC = () => {
             className="text-textDark hover:text-primary transition-colors duration-200"
           >
             <FiGithub size={24} />
+          </a>
+          <a 
+            href={orcidUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="ORCID Profile"
+            className="text-textDark hover:text-primary transition-colors duration-200"
+          >
+            <SiOrcid size={24} />
           </a>
           <a 
             href={mediumUrl} 
