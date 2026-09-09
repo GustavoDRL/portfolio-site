@@ -59,10 +59,12 @@ const AboutContent: React.FC = () => {
               </motion.h1>
               
               <motion.p variants={itemVariants} className="text-lg md:text-xl text-textDark mb-8 leading-relaxed max-w-3xl">
-                Instrumentation, Automation and Robotics Engineer with expertise in Full Stack Development, 
-                specializing in Generative AI, machine learning, and advanced robotics applications. 
-                With a proven track record in competitive robotics and team leadership, I combine technical 
-                expertise with innovative problem-solving to create cutting-edge solutions.
+                Chief Technology Officer (CTO) and AI & Distributed Systems Architect with deep expertise leading high-performance 
+                engineering teams and building mission-critical financial platforms. Currently commanding corporate technology strategy 
+                and engineering operations for Vanguarda Consórcio — official administrator for Shineray Brasil, powering 490 dealerships 
+                nationwide. Promoted to CTO after spearheading the company&apos;s enterprise AI turnaround as GenAI Engineering Lead. Combines 
+                a rigorous engineering foundation from UFABC in robotics and automation with executive technology leadership, scalable 
+                microservices, and published clinical machine learning research.
               </motion.p>
               
               <motion.div 
@@ -71,11 +73,21 @@ const AboutContent: React.FC = () => {
               >
                 <motion.div variants={itemVariants} className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                    <FaUsers size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-primary mb-1">Chief Technology Officer</h3>
+                    <p className="text-textDark">Directing technical roadmap, 5-engineer squad, FinOps, and high-availability operations</p>
+                  </div>
+                </motion.div>
+
+                <motion.div variants={itemVariants} className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <FaBrain size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary mb-1">AI Engineer</h3>
-                    <p className="text-textDark">Developing intelligent solutions with Generative AI and machine learning</p>
+                    <h3 className="text-lg font-semibold text-primary mb-1">AI & Systems Architect</h3>
+                    <p className="text-textDark">Designing multi-agent systems (CrewAI, LangGraph), enterprise RAG, and microservices</p>
                   </div>
                 </motion.div>
 
@@ -84,18 +96,8 @@ const AboutContent: React.FC = () => {
                     <FaCode size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary mb-1">Full Stack Developer</h3>
-                    <p className="text-textDark">Creating complete digital solutions with modern web technologies</p>
-                  </div>
-                </motion.div>
-
-                <motion.div variants={itemVariants} className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                    <FaUsers size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-1">Team Leader</h3>
-                    <p className="text-textDark">Experienced in leading technical teams to achieve exceptional results</p>
+                    <h3 className="text-lg font-semibold text-primary mb-1">Full Stack & APIs</h3>
+                    <p className="text-textDark">Engineering high-throughput backends in Go, Python (FastAPI), React 19, and Vue.js</p>
                   </div>
                 </motion.div>
 
@@ -104,8 +106,8 @@ const AboutContent: React.FC = () => {
                     <FaRobot size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary mb-1">Robotics Specialist</h3>
-                    <p className="text-textDark">Specializing in autonomous systems, control algorithms, and robotic integration</p>
+                    <h3 className="text-lg font-semibold text-primary mb-1">Robotics Engineer</h3>
+                    <p className="text-textDark">UFABC graduate with competitive robotics leadership, control theory, and ROS2 expertise</p>
                   </div>
                 </motion.div>
               </motion.div>
@@ -273,31 +275,13 @@ const AboutContent: React.FC = () => {
               >
                 <h3 className="text-2xl font-semibold text-primary mb-6">Professional Courses and Certifications</h3>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   <div>
-                    <h4 className="text-lg font-semibold text-primary mb-3 pb-1 border-b border-primary/30">ROS2 Specialization</h4>
-                    <ul className="space-y-2">
+                    <h4 className="text-lg font-semibold text-primary mb-3 pb-1 border-b border-primary/30">GenAI & LLMs</h4>
+                    <ul className="space-y-2 text-sm">
                       <li className="flex items-start gap-2">
                         <span className="text-accent font-bold">•</span>
-                        <span className="text-textDark">ROS2 Nav2 [Navigation 2 Stack] with SLAM and Navigation</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent font-bold">•</span>
-                        <span className="text-textDark">ROS2 For Beginners (ROS Foxy, Humble - 2025)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent font-bold">•</span>
-                        <span className="text-textDark">ROS2 for Beginners Level 2 - TF, URDF, RViz & Gazebo</span>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-3 pb-1 border-b border-primary/30">AI and LLM Development</h4>
-                    <ul className="space-y-2">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent font-bold">•</span>
-                        <span className="text-textDark">ChatGPT Prompt Engineering for Developers</span>
+                        <span className="text-textDark">ChatGPT Prompt Engineering for Developers (DeepLearning.AI)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent font-bold">•</span>
@@ -305,11 +289,71 @@ const AboutContent: React.FC = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent font-bold">•</span>
-                        <span className="text-textDark">Preprocessing Unstructured Data for LLM Applications</span>
+                        <span className="text-textDark">Multi AI Agent Systems with CrewAI</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent font-bold">•</span>
-                        <span className="text-textDark">Multi AI Agent Systems with crewAI</span>
+                        <span className="text-textDark">Preprocessing Unstructured Data for LLMs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">LangChain Mastery: Build GenAI Apps with Pinecone</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">ChatGPT, Midjourney, DALL-E 3 & APIs Guide</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-3 pb-1 border-b border-primary/30">Enterprise AI & MLOps</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">EY Artificial Intelligence - AI Engineering (Bronze Learning, 2024)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">MLOps Fundamentals - Azure Demo & Pipelines (Udemy, 2024)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">LangGraph Certification (DeepLearning.AI)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">AutoGen Multi-Agent Framework Training</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">Advanced Prompt Engineering & Guardrails</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-3 pb-1 border-b border-primary/30">Backend & Autonomous Systems</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">FastAPI - The Complete Course (Udemy, 2024)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">Advanced Django REST Framework & Microservices</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">PostgreSQL Performance Tuning & Indexing</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">ROS2 Nav2 Stack with SLAM and Navigation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold">•</span>
+                        <span className="text-textDark">ROS2 For Beginners (Foxy, Humble) & TF/URDF/RViz</span>
                       </li>
                     </ul>
                   </div>
@@ -415,7 +459,7 @@ const AboutContent: React.FC = () => {
                       <span className="text-lg font-bold">PT</span>
                     </div>
                     <p className="text-textDark font-medium">Portuguese</p>
-                    <p className="text-sm text-textDark">Fluent</p>
+                    <p className="text-sm text-textDark">Native</p>
                   </div>
                   
                   <div className="flex flex-col items-center">
@@ -423,7 +467,7 @@ const AboutContent: React.FC = () => {
                       <span className="text-lg font-bold">EN</span>
                     </div>
                     <p className="text-textDark font-medium">English</p>
-                    <p className="text-sm text-textDark">Advanced</p>
+                    <p className="text-sm text-textDark text-center">Advanced (Professional Working)</p>
                   </div>
                   
                   <div className="flex flex-col items-center">

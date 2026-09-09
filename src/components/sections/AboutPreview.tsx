@@ -64,23 +64,24 @@ const AboutPreview: React.FC = () => {
               variants={itemVariants} 
               className="text-lg text-textDark mb-8 leading-relaxed text-center lg:text-left"
             >
-              Instrumentation, Automation and Robotics Engineer with expertise in Full Stack Development, 
-              specializing in Generative AI, machine learning, and advanced robotics applications. 
-              I combine technical expertise with innovative problem-solving to create cutting-edge solutions.
+              Chief Technology Officer (CTO) and AI & Distributed Systems Architect. Leading corporate technology 
+              strategy and engineering operations for Vanguarda Consórcio — official administrator for Shineray Brasil, 
+              powering 490 dealerships nationwide. Hands-on background architecting enterprise microservices, 
+              production multi-agent systems, published clinical machine learning, and robotics engineering.
             </motion.p>
             
             {/* Key Skills */}
             <motion.div
               variants={containerVariants}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
             >
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 text-center sm:text-left">
                 <div className="p-2 bg-primary/10 rounded-lg text-primary flex-shrink-0">
                   <FaBrain size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-primary">AI</h3>
-                  <p className="text-sm text-textDark">Generative AI & ML</p>
+                  <h3 className="font-semibold text-primary">Generative AI</h3>
+                  <p className="text-sm text-textDark">Multi-Agent & RAG</p>
                 </div>
               </motion.div>
 
@@ -89,8 +90,8 @@ const AboutPreview: React.FC = () => {
                   <FaCode size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-primary">Full Stack</h3>
-                  <p className="text-sm text-textDark">Complete Solutions</p>
+                  <h3 className="font-semibold text-primary">Distributed Systems</h3>
+                  <p className="text-sm text-textDark">Go, Python & APIs</p>
                 </div>
               </motion.div>
 
@@ -100,7 +101,17 @@ const AboutPreview: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary">Robotics</h3>
-                  <p className="text-sm text-textDark">Autonomous Systems</p>
+                  <p className="text-sm text-textDark">ROS2 & Control</p>
+                </div>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 text-center sm:text-left">
+                <div className="p-2 bg-primary/10 rounded-lg text-primary flex-shrink-0">
+                  <FaArrowRight size={20} className="rotate-[-45deg]" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary">CTO Leadership</h3>
+                  <p className="text-sm text-textDark">Scale & FinOps</p>
                 </div>
               </motion.div>
             </motion.div>

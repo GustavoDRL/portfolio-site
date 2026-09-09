@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 import AboutContent from '@/components/sections/AboutContent';
 
 export const metadata: Metadata = {
-  title: "About Gustavo Del Rio Lima | AI & Robotics",
-  description: "Explore the skills, experience, and professional journey of Gustavo Del Rio Lima, specialist in AI and Robotics engineering with expertise in full stack development.",
+  title: "About Gustavo Del Rio Lima | CTO & AI Systems Architect",
+  description: "Explore the executive leadership, engineering background, and professional journey of Gustavo Del Rio Lima — Chief Technology Officer (CTO) and AI & Distributed Systems Architect.",
 };
 
 const AboutPage: React.FC = () => {

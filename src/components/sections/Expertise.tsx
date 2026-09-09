@@ -3,13 +3,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { skillsData } from '@/data/skills';
-import { FaCode, FaCogs, FaBrain, FaRocket } from 'react-icons/fa';
+import { FaBrain, FaServer, FaCloud, FaProjectDiagram, FaDatabase, FaLaptopCode, FaShieldAlt, FaRobot, FaCode } from 'react-icons/fa';
 
 const categoryIcons: { [key: string]: React.ReactNode } = {
-  "Programming Languages": <FaCode size={24} />,
-  "Technologies & Frameworks": <FaCogs size={24} />,
-  "AI & Data": <FaBrain size={24} />,
-  "Core Skills": <FaRocket size={24} />,
+  "Generative AI & LLMs": <FaBrain size={24} />,
+  "Backend & APIs": <FaServer size={24} />,
+  "MLOps & Deployment": <FaCloud size={24} />,
+  "Multi-Agent Systems": <FaProjectDiagram size={24} />,
+  "Data & Processing": <FaDatabase size={24} />,
+  "Frontend & DevOps": <FaLaptopCode size={24} />,
+  "Security & Compliance": <FaShieldAlt size={24} />,
+  "Robotics & Autonomous Systems": <FaRobot size={24} />,
 };
 
 const Expertise: React.FC = () => {
