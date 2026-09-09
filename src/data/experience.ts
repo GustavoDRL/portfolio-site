@@ -17,28 +17,28 @@ export const experienceData: ExperienceItem[] = [
     company: "Vanguarda Consórcio",
     role: "Chief Technology Officer (CTO)",
     period: { start: "2026", end: null },
-    description: "Promoted to CTO after spearheading the company's enterprise AI turnaround. Steer corporate technology strategy and lead engineering for the official Shineray Brasil consortium network across 490 dealerships nationwide, commanding a 5-engineer squad across architecture, full-stack systems, and production AI.",
+    description: "Promoted to CTO after spearheading the company's enterprise AI turnaround as GenAI Engineering Lead. Steer corporate technology strategy and lead engineering operations for the official Shineray Brasil consortium network across 490 dealerships nationwide, directing a 5-engineer squad while aligning technical roadmaps with executive commercial expansion.",
     highlights: [
-      "Steer corporate technical strategy and command 5-person engineering squad, establishing proprietary tech as the core growth engine for the official Shineray Brasil consortium network across 490 dealerships nationwide",
-      "Architected and deployed full-lifecycle quota platform (Go, Python, React, Vue.js), unifying dealership operations from point-of-sale to contemplation with complete end-to-end transparency",
-      "Engineered automated credit underwriting and analytics pipelines, transforming high-volume transactional data into actionable executive intelligence and accelerating proposal clearance by ~60%",
-      "Orchestrated production multi-agent sales platform (CrewAI, LangGraph, GPT-4o via WhatsApp Business API), automating ~70% of initial lead qualification and customer acquisition",
-      "Institutionalized company-wide LLMOps (prompt caching, dynamic model routing, fallback circuit breakers), driving ~50% operational cost reduction while sustaining 99.9% production uptime"
+      "Steer corporate technology strategy and command 5-person engineering squad, establishing proprietary tech as the core commercial growth engine for the official Shineray Brasil network across 490 dealerships nationwide",
+      "Direct digital product delivery and platform reliability across all quota lifecycles, unifying commercial operations from point-of-sale to contemplation while sustaining 99.9% production uptime",
+      "Spearhead credit automation and data intelligence initiatives, transforming transactional data into executive decision-making pipelines that accelerated proposal clearance by ~60%",
+      "Champion engineering governance, security compliance (LGPD), and FinOps optimization, driving ~50% operational cost reduction across enterprise cloud infrastructure and AI licensing"
     ],
-    technologies: ["Go", "Python", "FastAPI", "Django", "React", "Vue.js", "CrewAI", "LangGraph", "RAG/FAISS", "LLMOps", "PostgreSQL", "Redis", "Docker", "Stripe"],
+    technologies: ["Technology Strategy", "Engineering Leadership", "FinOps", "LGPD Compliance", "Executive Analytics", "System Architecture", "High Availability (99.9%)", "Cloud Governance"],
     category: "Professional",
   },
   {
     company: "Vanguarda Consórcio",
     role: "GenAI Engineering Lead",
     period: { start: "2025", end: "2026" },
-    description: "Spearheaded Vanguarda's enterprise AI turnaround and designed core distributed microservices, laying the architectural and operational foundation that resulted in rapid promotion to CTO.",
+    description: "Spearheaded Vanguarda's enterprise AI turnaround and designed core distributed microservices, multi-agent conversational platforms, and full-lifecycle applications, laying the technical foundation that led to promotion to CTO.",
     highlights: [
-      "Promoted to CTO after spearheading Vanguarda's enterprise AI turnaround, architecting core distributed microservices (FastAPI with 103 endpoints, PostgreSQL, Redis, Docker)",
-      "Built production enterprise RAG engine with FAISS vector store and hybrid retrieval, delivering <100ms semantic search and sub-5s response latency with rigorous guardrails",
-      "Architected full-stack Seller Service Center (React 19, Fastify, Prisma, BullMQ, Redis) streamlining partner administration and automated CRM ingestion"
+      "Promoted to CTO after leading Vanguarda's enterprise AI turnaround, architecting distributed microservices (FastAPI with 103 endpoints, PostgreSQL, Redis, Docker)",
+      "Orchestrated production multi-agent sales platform (CrewAI, LangGraph, GPT-4o via WhatsApp Business API), automating ~70% of customer acquisition and lead qualification",
+      "Built production enterprise RAG engine with FAISS vector store and hybrid retrieval, delivering <100ms semantic search and sub-5s response latency with strict guardrails",
+      "Engineered full-stack quota and seller platforms (Go, Python, React 19, Vue.js 3), streamlining asynchronous data pipelines and partner CRM ingestion"
     ],
-    technologies: ["Python", "FastAPI", "React", "Vue.js", "CrewAI", "FAISS", "PostgreSQL", "Redis", "Docker", "WhatsApp Business API"],
+    technologies: ["FastAPI", "Go", "Python", "React 19", "Vue.js 3", "CrewAI", "LangGraph", "FAISS", "RAG", "LLMOps", "PostgreSQL", "Redis", "Docker", "WhatsApp Business API"],
     category: "Professional",
   },
   {
