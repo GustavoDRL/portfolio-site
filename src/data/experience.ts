@@ -15,16 +15,30 @@ export interface ExperienceItem {
 export const experienceData: ExperienceItem[] = [
   {
     company: "Vanguarda Consórcio",
-    role: "AI specialist & Tech Lead",
-    period: { start: "2025", end: null },
-    description: "Responsible for the development of all technical solutions at the company. Building enterprise AI systems and full-stack applications for consortium sales operations.",
+    role: "Chief Technology Officer (CTO)",
+    period: { start: "2026", end: null },
+    description: "Promoted to CTO after spearheading the company's enterprise AI turnaround. Head of technology strategy and software engineering for the official Shineray Brasil consortium administrator (powering 490 dealerships nationwide), leading a 5-engineer team while remaining hands-on in architecture and code.",
     highlights: [
-      "Leading all technical development initiatives across the organization",
+      "Define company technical strategy and lead 5-person engineering squad, establishing technology as core growth engine",
+      "Architected end-to-end platform (Go, Python, React, Vue.js) providing full quota lifecycle visibility from sale to contemplation across 490 dealerships nationwide",
+      "Implemented automated credit and data analytics pipelines, turning operational data into actionable business intelligence",
+      "Lead multi-agent chatbot system (CrewAI + GPT-4 via WhatsApp Business) designed to automate ~70% of customer acquisition",
+      "Drive operational automation via LLMOps (prompt engineering, model routing, caching), targeting ~50% operational cost reduction with 99% production uptime"
+    ],
+    technologies: ["Go", "Python", "FastAPI", "Django", "React", "Vue.js", "CrewAI", "LangGraph", "RAG/FAISS", "LLMOps", "PostgreSQL", "Redis", "Docker", "Stripe"],
+    category: "Professional",
+  },
+  {
+    company: "Vanguarda Consórcio",
+    role: "GenAI Engineering Lead",
+    period: { start: "2025", end: "2026" },
+    description: "Led the company's AI initiatives and initial microservices architecture, laying the technical foundation that led to promotion to CTO.",
+    highlights: [
       "Architected enterprise multi-agent RAG system with WhatsApp Business API integration",
       "Developed full-stack Seller Service Center with React, Fastify, and PostgreSQL",
-      "Implemented CrewAI-based agents for sales, support, and lead qualification"
+      "Engineered FAISS vector search with <100ms semantic retrieval and dual-LLM routing"
     ],
-    technologies: ["Python", "TypeScript", "FastAPI", "React", "Vue.js", "CrewAI", "FAISS", "PostgreSQL", "Redis", "Docker", "WhatsApp Business API"],
+    technologies: ["Python", "FastAPI", "React", "Vue.js", "CrewAI", "FAISS", "PostgreSQL", "Redis", "Docker", "WhatsApp Business API"],
     category: "Professional",
   },
   {

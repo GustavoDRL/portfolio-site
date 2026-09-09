@@ -15,8 +15,10 @@ export const skillsData: SkillCategory[] = [
     title: "Programming Languages",
     skills: [
       { name: "Python" },
-      { name: "C/C++" },
+      { name: "Go" },
+      { name: "TypeScript" },
       { name: "JavaScript" },
+      { name: "C/C++" },
       { name: "HTML & CSS" },
       { name: "PostgreSQL" },
       { name: "Bash" },
@@ -25,28 +27,34 @@ export const skillsData: SkillCategory[] = [
   {
     title: "Technologies & Frameworks",
     skills: [
-      { name: "ROS / ROS2" },
+      { name: "FastAPI" },
+      { name: "Django" },
+      { name: "React" },
+      { name: "Vue.js" },
+      { name: "Next.js" },
       { name: "Docker" },
       { name: "CI/CD" },
+      { name: "ROS / ROS2" },
       { name: "FreeRTOS" },
-      { name: "STM32CubeIDE" },
       { name: "LangChain" },
       { name: "CrewAI" },
       { name: "PyTorch" },
-      { name: "Next.js" }, // Added based on current project
-      { name: "Tailwind CSS" }, // Added based on current project
+      { name: "Tailwind CSS" },
     ],
   },
   {
     title: "AI & Data",
     skills: [
       { name: "Generative AI" },
+      { name: "LLMOps" },
+      { name: "LangGraph" },
+      { name: "RAG Systems" },
+      { name: "Multi-Agent Systems" },
       { name: "Machine Learning" },
       { name: "Deep Learning" }, 
       { name: "Reinforcement Learning" },
       { name: "Computer Vision" },
       { name: "Data Structures" },
-      { name: "RAG Systems" },
     ],
   },
   {

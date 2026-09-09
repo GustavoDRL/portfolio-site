@@ -6,7 +6,7 @@ import ProjectGrid from '@/components/sections/ProjectGrid'; // Import ProjectGr
 export default function Home() {
   return (
     <Layout>
-      <Hero />
+      <Hero subtitle="Chief Technology Officer (CTO) | AI & Distributed Systems Architect" />
       <AboutPreview />
       <ProjectGrid /> {/* Add ProjectGrid component */}
       {/* Remove placeholder */}
