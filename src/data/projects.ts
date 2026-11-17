@@ -580,9 +580,10 @@ Machine learning models achieve moderate discrimination under extreme clinical i
 ## Publication Details
 
 *   **Journal**: Brazilian Journal of Neurosurgery (JBNC)
-*   **Citation**: J Bras Neurocirur 37(2):169-181, 2026
+*   **Citation**: J Bras Neurocirur 37(2):169-183, 2026
 *   **DOI**: 10.22290/jbnc.2026.02031047
-*   **Accepted**: November 2, 2025
+*   **Received**: September 2, 2025
+*   **Accepted**: February 24, 2026
 
 ## Authors
 
@@ -604,6 +605,120 @@ Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho 
       { type: "paper", url: "https://doi.org/10.22290/jbnc.2026.02031047", label: "DOI" },
     ],
     featured: true,
+    order: 5,
+  },
+  {
+    id: "stroke-functional-recovery",
+    title: "Machine Learning Models to Predict Functional Recovery after Ischemic Stroke",
+    slug: "ml-stroke-functional-recovery-prediction",
+    category: "Academic Publications",
+    tags: ["Machine Learning", "Ischemic Stroke", "Functional Recovery", "Nested Cross-Validation", "SHAP", "Healthcare AI", "International Stroke Trial", "Neuroscience"],
+    description: "Published research comparing 7 ML algorithms and 6 resampling strategies with nested cross-validation to predict functional recovery in 10,016 ischemic stroke patients from the International Stroke Trial.",
+    content: `## Abstract
+
+Predicting functional recovery after ischemic stroke remains challenging due to the heterogeneous nature of cerebrovascular disease. Machine-learning approaches may capture complex, non-linear relationships between clinical variables and outcomes that traditional statistical methods miss.
+
+This study develops and compares machine-learning models to predict functional recovery in patients with confirmed ischemic stroke using data from the International Stroke Trial (IST).
+
+## Methods
+
+We analyzed 10,016 patients with confirmed ischemic stroke from the IST database. Seven algorithms (Logistic Regression, Random Forest, Support Vector Machine, Stochastic Gradient Descent, XGBoost, Gradient Boosting, and Multilayer Perceptron) were evaluated with nested cross-validation (5 outer and 3 inner folds), probability calibration, and Youden index threshold optimization.
+
+Six resampling strategies were compared to address class imbalance (28% recovery rate), and model interpretability was assessed with SHAP values.
+
+## Key Results
+
+*   **Best Discrimination**: Logistic Regression without resampling achieved the highest AUC-ROC (0.647; 95% CI 0.636–0.658), comparable to more complex algorithms.
+*   **Sensitivity vs. Specificity**: XGBoost with SMOTE-Tomek reached the best sensitivity (0.677), while SVM with Tomek Links reached the highest specificity (0.740). Resampling traded specificity for sensitivity without improving discrimination.
+*   **Predictors (SHAP)**: Leg/foot motor deficit, stroke subtype, hemianopia, age, and dysphasia were the key predictive features.
+
+## Conclusion
+
+Machine-learning models showed modest discriminative ability to predict functional recovery after ischemic stroke. Logistic Regression offered the best balance between performance and interpretability; additional variables, such as imaging biomarkers, may be needed to improve prognostic accuracy.
+
+## Publication Details
+
+*   **Journal**: Arquivos Brasileiros de Neurocirurgia: Brazilian Neurosurgery (Thieme)
+*   **Citation**: Arq Bras Neurocir 2026;45(2):e62-e71
+*   **DOI**: 10.1055/s-0046-1822999
+*   **Received**: December 19, 2025
+*   **Accepted**: March 13, 2026
+*   **License**: Open access, CC BY-NC-ND 4.0
+
+## Authors
+
+Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Carlos Umberto Pereira³, Murillo Martins Correia⁴, Roberto Alexandre Dezena⁴
+
+*¹School of Medicine, UFTM | ²Center for Mathematics, Computing and Cognition, UFABC | ³Neurosurgery Division, UFS | ⁴Neurosurgery Division, Hospital de Clínicas, UFTM*`,
+    featuredImage: "/images/articles/stroke-functional-recovery-cover.png",
+    technologies: [
+      { name: "Python", category: "Language" },
+      { name: "scikit-learn", category: "Library" },
+      { name: "Logistic Regression", category: "AI Model" },
+      { name: "XGBoost", category: "AI Model" },
+      { name: "SVM", category: "AI Model" },
+      { name: "SHAP", category: "Library" },
+      { name: "Imbalanced-Learn", category: "Library" },
+      { name: "Data Analysis", category: "Tool" },
+    ],
+    links: [
+      { type: "paper", url: "https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0046-1822999", label: "Read Paper (Thieme)" },
+      { type: "paper", url: "https://doi.org/10.1055/s-0046-1822999", label: "DOI" },
+    ],
+    featured: false,
+    order: 5,
+  },
+  {
+    id: "tbi-functional-outcome",
+    title: "Machine Learning Prediction of Six-Month Functional Outcome Across the Full Severity Spectrum of Traumatic Brain Injury",
+    slug: "ml-tbi-six-month-functional-outcome-track-tbi",
+    category: "Academic Publications",
+    tags: ["Machine Learning", "Traumatic Brain Injury", "TRACK-TBI", "XGBoost", "Calibration", "Biomarkers", "Healthcare AI", "Neuroscience"],
+    description: "Published research building a single calibrated XGBoost model on 1,749 TRACK-TBI adults to predict six-month functional outcome across mild to severe traumatic brain injury, benchmarked against IMPACT.",
+    content: `## Abstract
+
+Prognostic models for traumatic brain injury (TBI), such as IMPACT, were derived in moderate-to-severe cohorts and do not apply to the predominant mild injuries. This study develops a machine-learning model to predict six-month functional outcome across the full TBI severity spectrum.
+
+## Methods
+
+Of 2,545 adults in TRACK-TBI (Transforming Research and Clinical Knowledge in Traumatic Brain Injury), 1,749 had a valid six-month outcome. An XGBoost model used demographics, clinical examination, 13 CT findings, and five blood biomarkers to predict unfavorable outcome (GOSE-TBI 1–4). It was evaluated by cross-validation and benchmarked against IMPACT in the moderate-to-severe subset.
+
+## Key Results
+
+*   **Calibration**: Unfavorable outcomes occurred in 242 patients (13.8%); calibration was good (Brier 0.051; slope 0.95).
+*   **Discrimination**: Within-severity AUROC was 0.85 (mild) and 0.89 (moderate-to-severe); the pooled 0.944 was inflated by severity.
+*   **Multimodal Gain**: Discrimination rose with each added modality (AUPRC 0.751 → 0.787 → 0.814) and exceeded IMPACT in this in-cohort benchmark (ΔAUROC +0.108 Core; +0.070 Extended), remaining more accurate after recalibration (Brier 0.134 vs 0.189).
+
+## Conclusion
+
+A single calibrated, interpretable model predicts six-month outcome across the TBI severity spectrum, discriminates better than IMPACT, and provides calibrated risk estimates for the mild-TBI majority, for which IMPACT produces none. Incomplete recovery in mild TBI was not modeled, and external validation is required before clinical use.
+
+## Publication Details
+
+*   **Journal**: Brazilian Journal of Neurosurgery (JBNC)
+*   **Citation**: J Bras Neurocirur 37(4):489-500, 2026
+*   **DOI**: 10.22290/jbnc.2026.14081136
+*   **Received**: July 11, 2026
+*   **Accepted**: July 21, 2026
+
+## Authors
+
+Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Luiza Carolina Moreira Marcolino³, Larissa Batista Xavier³, Kioshe Rodrigues Siracava³, João Ricardo Sousa Vasconcellos³, Murillo Martins Correia³, Danilo Otávio de Araújo Silva⁴, Carlos Umberto Pereira⁵, Roberto Alexandre Dezena³
+
+*¹Faculty of Medicine, UFTM | ²Center for Mathematics, Computing and Cognition, UFABC | ³Neurosurgery Division, Clinics Hospital, UFTM | ⁴Department of Neurosurgery, Northwell Health | ⁵Neurosurgery Division, UFS*`,
+    featuredImage: "/images/articles/tbi-functional-outcome-cover.png",
+    technologies: [
+      { name: "Python", category: "Language" },
+      { name: "scikit-learn", category: "Library" },
+      { name: "XGBoost", category: "AI Model" },
+      { name: "SHAP", category: "Library" },
+      { name: "Data Analysis", category: "Tool" },
+    ],
+    links: [
+      { type: "paper", url: "https://jbnc.org.br/artigo/machine-learning-prediction-of-six-month-functional-outcome-across-the-full-severity-spectrum-of-traumatic-brain-injury-a-track-tbi-study/1813", label: "Read Paper (JBNC)" },
+      { type: "paper", url: "https://doi.org/10.22290/jbnc.2026.14081136", label: "DOI" },
+    ],
+    featured: false,
     order: 5,
   },
   {

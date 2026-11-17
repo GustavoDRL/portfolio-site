@@ -384,10 +384,50 @@ const AboutContent: React.FC = () => {
                 <div className="space-y-6">
                   <div className="pl-4 border-l-2 border-primary/40">
                     <h4 className="text-lg font-semibold text-primary mb-1">
+                      Machine Learning Prediction of Six-Month Functional Outcome Across the Full Severity Spectrum of Traumatic Brain Injury: A TRACK-TBI Study
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-1">
+                      <span className="italic">Brazilian Journal of Neurosurgery (JBNC)</span>, Vol. 37(4), pp. 489–500, 2026
+                    </p>
+                    <p className="text-xs text-textDark mb-2">
+                      S. P. P. Silveira, <strong className="text-primary">G. R. Lima</strong>, L. C. M. Marcolino, L. B. Xavier, K. R. Siracava, J. R. S. Vasconcellos, M. M. Correia, D. O. A. Silva, C. U. Pereira, R. A. Dezena.
+                    </p>
+                    <a
+                      href="https://doi.org/10.22290/jbnc.2026.14081136"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-semibold text-primary hover:underline"
+                    >
+                      DOI: 10.22290/jbnc.2026.14081136 &rarr;
+                    </a>
+                  </div>
+
+                  <div className="pl-4 border-l-2 border-primary/40">
+                    <h4 className="text-lg font-semibold text-primary mb-1">
+                      Machine Learning Models to Predict Functional Recovery after Ischemic Stroke: A Nested Cross-Validation Study Using the International Stroke Trial Database
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-1">
+                      <span className="italic">Arquivos Brasileiros de Neurocirurgia: Brazilian Neurosurgery (Thieme)</span>, Vol. 45(2), pp. e62–e71, 2026
+                    </p>
+                    <p className="text-xs text-textDark mb-2">
+                      S. P. P. Silveira, <strong className="text-primary">G. R. Lima</strong>, C. U. Pereira, M. M. Correia, R. A. Dezena.
+                    </p>
+                    <a
+                      href="https://doi.org/10.1055/s-0046-1822999"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs font-semibold text-primary hover:underline"
+                    >
+                      DOI: 10.1055/s-0046-1822999 &rarr;
+                    </a>
+                  </div>
+
+                  <div className="pl-4 border-l-2 border-primary/40">
+                    <h4 className="text-lg font-semibold text-primary mb-1">
                       Machine Learning Models to Differentiate Hemorrhagic from Ischemic Stroke: Insights from the International Stroke Trial
                     </h4>
                     <p className="text-sm text-gray-600 mb-1">
-                      <span className="italic">Brazilian Journal of Neurosurgery (JBNC)</span>, Vol. 37(2), pp. 169–181, 2026
+                      <span className="italic">Brazilian Journal of Neurosurgery (JBNC)</span>, Vol. 37(2), pp. 169–183, 2026
                     </p>
                     <p className="text-xs text-textDark mb-2">
                       S. P. P. Silveira, <strong className="text-primary">G. R. Lima</strong>, G. B. Alberto, L. C. M. Marcolino, L. B. Xavier, C. U. Pereira, M. M. Correia, R. A. Dezena.
