@@ -3,6 +3,7 @@ import ProjectDetail from '@/components/sections/ProjectDetail';
 import Layout from '@/components/layout/Layout';
 import { notFound } from 'next/navigation';
 import type { Metadata } from "next"; // Import Metadata type
+import { siteUrl } from '@/lib/site';
 
 interface ProjectPageProps {
   params: { slug: string };
@@ -20,8 +21,6 @@ export async function generateStaticParams() {
   }));
 }
 
-// Define base URL for Open Graph images (consistent with layout.tsx)
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 // Generate metadata for the page
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {

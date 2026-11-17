@@ -10,7 +10,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ 
   title = "Gustavo Del Rio Lima", // Default title from LaTeX
-  subtitle = "AI Specialist" // Placeholder subtitle
+  subtitle = "AI Engineer — LLM agents, RAG & evals in production" // Default; the home page passes its own subtitle
 }) => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about-preview');

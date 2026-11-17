@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaHome, FaUser } from 'react-icons/fa';
+import { FaHome, FaThLarge, FaUser } from 'react-icons/fa';
 
 const Header: React.FC = () => {
   return (
@@ -13,6 +13,10 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-4">
+          <Link href="/projects" className="flex items-center gap-1 text-textDark hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors duration-200 ease-in-out rounded px-2 py-1">
+            <FaThLarge className="md:hidden" size={18} />
+            <span className="hidden md:inline">Projects</span>
+          </Link>
           <Link href="/about" className="flex items-center gap-1 text-textDark hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors duration-200 ease-in-out rounded px-2 py-1">
             <FaUser className="md:hidden" size={18} />
             <span className="hidden md:inline">About</span>

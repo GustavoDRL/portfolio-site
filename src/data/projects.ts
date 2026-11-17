@@ -110,7 +110,7 @@ Developed a proof-of-concept VR-based intelligent assistant system integrating r
       { name: "Python", category: "Language" },
       // Add others like Speech Recognition, TTS if desired
     ],
-    featured: true,
+    featured: false,
     order: 7,
   },
   {
@@ -152,7 +152,7 @@ The project contributed to the company's research in multi-agent applications, p
       { name: "Data Validation Framework", category: "Tool" },
       { name: "Streamlit", category: "Framework" },
     ],
-    featured: true,
+    featured: false,
     order: 10,
   },
   {
@@ -195,7 +195,7 @@ Engineered a comprehensive meeting analysis system deployed on Jetson Nano hardw
       { name: "Real-time Data Streaming", category: "Tool" },
       { name: "Python", category: "Language" },
     ],
-    featured: true,
+    featured: false,
     order: 11,
   },
   {
@@ -272,7 +272,7 @@ Led the development of four combat robots, implementing comprehensive solutions 
     links: [
       { type: "github", url: "https://github.com/project-neon/combate.git", label: "project-neon-combate" }
     ],
-    featured: true,
+    featured: false,
     order: 12,
   },
   {
@@ -487,7 +487,7 @@ Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho 
       { type: "paper", url: "https://jbnc.org.br/artigo/classification-of-ischemic-stroke-subtypes-using-machine-learning-insights-from-the-international-stroke-trial-dataset/1735", label: "Read Paper (JBNC)" },
       { type: "paper", url: "https://doi.org/10.22290/jbnc.2025.360312", label: "DOI" },
     ],
-    featured: true,
+    featured: false,
     order: 3,
   },
   {
@@ -545,7 +545,7 @@ Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho 
       { type: "paper", url: "https://jbnc.org.br/artigo/machine-learning-models-for-six-month-mortality-prediction-after-ischemic-stroke-insights-from-the-international-stroke-trial/1761", label: "Read Paper (JBNC)" },
       { type: "paper", url: "https://doi.org/10.22290/jbnc.2026.08121508", label: "DOI" },
     ],
-    featured: true,
+    featured: false,
     order: 4,
   },
   {
@@ -607,37 +607,36 @@ Samuel Pedro Pereira Silveira¹, **Gustavo del Rio Lima²**, Gustavo Branquinho 
     order: 5,
   },
   {
-    id: "vanguarda-seller-center",
-    title: "Vanguarda Seller Service Center",
-    slug: "vanguarda-seller-service-center",
+    id: "consortium-seller-center",
+    title: "Seller Service Center for a Consortium Network",
+    slug: "consortium-seller-service-center",
     category: "Web Development",
-    tags: ["Full Stack", "Node.js", "React", "TypeScript", "Fastify", "Prisma", "Docker", "PostgreSQL", "Redis", "Vanguarda Consórcio"],
-    description: "Full-stack seller service center developed for Vanguarda Consórcio, enabling complete consortium sales management through a modern React interface and a robust Node.js backend.",
+    tags: ["Full Stack", "Node.js", "React", "TypeScript", "Fastify", "Prisma", "Docker", "PostgreSQL", "Redis"],
+    description: "Full-stack sales and partner management platform for a consortium administrator's seller network, with a React frontend and a Node.js backend.",
     content: `## Project Overview
 
-Developed for **Vanguarda Consórcio**, this Seller Service Center is a comprehensive consortium administration system designed to streamline sales operations and partner management. The platform combines a modern React frontend with a high-performance Node.js backend, all containerized with Docker for reliable deployment.
+Built for a consortium administrator, this Seller Service Center is the internal platform its sales network uses to manage consortium sales and partners. It combines a React frontend with a Node.js backend, all containerized with Docker.
 
 ## Backend
 
-Built with Fastify and TypeScript, the backend provides a fast and scalable API layer. It uses Prisma ORM for database operations with PostgreSQL, ensuring type-safe data access. Redis powers the background job queue through BullMQ, handling automated data imports and synchronization tasks. The system implements a robust two-layer authentication combining API tokens with JWT-based user authentication. OpenTelemetry integration enables comprehensive observability and performance monitoring.
+The API is built with Fastify and TypeScript. Prisma handles type-safe data access to PostgreSQL, and a Redis-backed job queue (BullMQ) runs background processing outside the request path. Access is authenticated and role-based, and OpenTelemetry provides tracing and performance monitoring.
 
 ## Frontend
 
-The user interface is built with React 19 and TypeScript, using Vite for fast development and optimized builds. Tailwind CSS provides a clean, responsive design system. React Query manages server state and caching, while Recharts powers the interactive dashboards and analytics visualizations. The application implements role-based routing, showing different interfaces for authenticated and non-authenticated users.
+The interface is built with React 19, TypeScript and Vite, styled with Tailwind CSS. React Query manages server state and caching, Recharts renders the dashboards, and routing changes with the user's role.
 
 ## Key Features
 
-*   **Consortium Management**: Complete lifecycle management for consortium operations
-*   **Partner Administration**: Management of partners and partner categories with detailed tracking
-*   **Sales Pipeline**: End-to-end sales process with external webhook integrations
-*   **Dashboard & Analytics**: Real-time metrics and performance visualization
-*   **Document Signing**: Integration with ClickSign for digital contract signatures
-*   **Data Synchronization**: Automated imports from external systems
+*   **Consortium Management**: Lifecycle management for consortium operations
+*   **Partner Administration**: Partners and partner categories with detailed tracking
+*   **Sales Pipeline**: The sales process from lead to signed contract
+*   **Dashboards & Analytics**: Sales metrics and performance visualization
+*   **Digital Contract Signing**: Contracts signed electronically inside the sales flow
 
 ## Infrastructure
 
-The entire application runs in Docker containers, orchestrating PostgreSQL, Redis, backend, and frontend services. Multi-stage Docker builds ensure optimized production images, while built-in health checks monitor database connectivity and service availability.`,
-    featuredImage: "/images/projects/vanguarda-seller-center.png",
+PostgreSQL, Redis, backend and frontend run as Docker containers. Multi-stage builds keep production images small, and health checks monitor database connectivity and service availability.`,
+    featuredImage: "/images/projects/seller-service-center-architecture.png",
     technologies: [
       { name: "TypeScript", category: "Language" },
       { name: "Node.js", category: "Framework" },
@@ -648,60 +647,52 @@ The entire application runs in Docker containers, orchestrating PostgreSQL, Redi
       { name: "PostgreSQL", category: "Tool" },
       { name: "Redis", category: "Tool" },
       { name: "BullMQ", category: "Library" },
+      { name: "OpenTelemetry", category: "Tool" },
       { name: "Docker", category: "Tool" },
       { name: "Tailwind CSS", category: "Framework" },
     ],
-    featured: true,
+    featured: false,
     order: 2,
   },
   {
-    id: "vanguarda-multiagents",
-    title: "Vanguarda Multi-Agents",
-    slug: "vanguarda-multi-agents",
+    id: "multi-agent-sales-assistant",
+    title: "Multi-Agent Sales Assistant (Consortium Administrator)",
+    slug: "multi-agent-sales-assistant",
     category: "Artificial Intelligence",
-    tags: ["Multi-Agent", "RAG", "LLM", "CrewAI", "FastAPI", "Vue.js", "WhatsApp API", "FAISS", "Python", "Vanguarda Consórcio"],
-    description: "Enterprise multi-agent RAG system developed for Vanguarda Consórcio with WhatsApp Business API integration, featuring specialized AI agents for sales, support, and lead qualification.",
+    tags: ["Multi-Agent", "RAG", "LLM", "CrewAI", "FastAPI", "Vue.js", "WhatsApp API", "Vector Search", "Python"],
+    description: "Production multi-agent RAG assistant for a consortium administrator, serving customers over WhatsApp with specialized agents for triage, sales qualification, questions and closing.",
     content: `## Project Overview
 
-Developed for **Vanguarda Consórcio**, this is an enterprise-grade multi-agent RAG (Retrieval Augmented Generation) system with WhatsApp Business API integration. Built on FastAPI (backend) and Vue.js 3 (frontend), it provides intelligent customer interaction through specialized AI agents.
+Built for a consortium administrator, this is a production multi-agent RAG (Retrieval Augmented Generation) system that serves customers over WhatsApp. The backend runs on FastAPI (Python) and the operations frontend on Vue.js 3.
 
 ## Multi-Agent Architecture
 
-The system employs a **CrewAI-based multi-agent system** with specialized agents for different tasks:
+A **CrewAI-based multi-agent system** splits each conversation across specialized agents:
 
-*   **TriagemAgent**: Initial classification and intelligent routing of incoming messages
-*   **VendasAgent**: Sales qualification, lead conversion, and opportunity management
-*   **DuvidasAgent**: Question answering and customer education using RAG
-*   **EncerramentoAgent**: Conversation finalization and CRM integration
+*   **Triage agent**: Classifies incoming messages and routes them to the right specialist
+*   **Sales agent**: Qualifies leads and moves opportunities forward
+*   **Q&A agent**: Answers customer questions with retrieval over the company's documents
+*   **Closing agent**: Wraps up the conversation and records it in the CRM
 
-## Core Technical Features
+## Core Technical Patterns
 
-*   **LLM Router**: Intelligent routing between Groq (primary) and OpenAI (fallback) with circuit breaker pattern
-*   **Document Processing**: PDF handling with Docling, smart chunking (1200 tokens), and thumbnail generation
-*   **Vector Store**: FAISS-based similarity search with OpenAI embeddings (text-embedding-3-small, 768D)
-*   **Session Management**: Redis-based with in-memory fallback for reliability
-
-## Document Management System
-
-*   **Unified Service**: Complete document lifecycle management (upload, processing, chunking, embeddings, retrieval)
-*   **Smart Chunking**: Automatic text extraction with boundary detection (1200 chars, 150 overlap)
-*   **Hybrid Architecture**: FAISS + PostgreSQL for optimal performance
-*   **TTL-based Caching**: 300-second cache for query optimization
+*   **LLM Routing**: Multi-provider routing with fallback and a circuit breaker
+*   **Document Pipeline**: PDF ingestion, chunking, embeddings and retrieval as one managed lifecycle
+*   **Vector Store + PostgreSQL**: Similarity search over a vector store, with PostgreSQL as the system of record and automatic consistency checks between the two
+*   **Sessions & Caching**: Redis-based sessions with an in-memory fallback, plus query caching
 
 ## WhatsApp Integration
 
-*   **Webhook Configuration**: ngrok tunnel for development, Meta Developer Console integration
-*   **Security**: Signature verification for all incoming webhooks
-*   **Smart Routing**: Content-based routing with session continuity
-*   **CRM Integration**: Automatic lead tracking and conversation history
+*   **Verified Inbound Messages**: Every incoming message is authenticated before processing
+*   **Session Continuity**: Content-based routing that keeps the conversation context
+*   **CRM Integration**: Lead tracking and conversation history
 
-## Enterprise Features
+## Operations
 
-*   **Proactive Monitoring**: Real-time worker health tracking with automatic recovery
-*   **Alert System**: Notifications for stopped workers, stalled processing, and error spikes
-*   **RAG Synchronization**: Automatic FAISS-PostgreSQL sync checking and repair
-*   **Cost Tracking**: LLM usage monitoring for budget management`,
-    featuredImage: "/images/projects/vanguarda-multiagents.png",
+*   **Worker Monitoring**: Health tracking with automatic recovery
+*   **Alerting**: Notifications for stopped workers, stalled processing and error spikes
+*   **Cost Tracking**: LLM usage monitoring for budget control`,
+    featuredImage: "/images/projects/multi-agent-assistant-architecture.png",
     technologies: [
       { name: "Python", category: "Language" },
       { name: "FastAPI", category: "Framework" },
@@ -709,8 +700,7 @@ The system employs a **CrewAI-based multi-agent system** with specialized agents
       { name: "TypeScript", category: "Language" },
       { name: "CrewAI", category: "Framework" },
       { name: "FAISS", category: "Library" },
-      { name: "OpenAI API", category: "AI Model" },
-      { name: "Groq API", category: "AI Model" },
+      { name: "LLM APIs", category: "AI Model" },
       { name: "Redis", category: "Tool" },
       { name: "PostgreSQL", category: "Tool" },
       { name: "WhatsApp Business API", category: "Platform" },

@@ -2,13 +2,14 @@ import Layout from '@/components/layout/Layout';
 import Hero from '@/components/sections/Hero';
 import AboutPreview from '@/components/sections/AboutPreview';
 import ProjectGrid from '@/components/sections/ProjectGrid'; // Import ProjectGrid
+import { siteHeadline } from '@/lib/site';
 
 export default function Home() {
   return (
     <Layout>
-      <Hero subtitle="Chief Technology Officer (CTO) | AI & Distributed Systems Architect" />
+      <Hero subtitle={siteHeadline} />
       <AboutPreview />
-      <ProjectGrid /> {/* Add ProjectGrid component */}
+      <ProjectGrid featuredOnly />
       {/* Remove placeholder */}
       {/* 
       <div className="container mx-auto px-4 py-16 text-center">

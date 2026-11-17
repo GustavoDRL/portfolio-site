@@ -1,12 +1,11 @@
 import { MetadataRoute } from 'next'
 import { projectsData } from '@/data/projects';
+import { siteUrl } from '@/lib/site';
 
 // Define the expected type for changeFrequency explicitly
 type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-
   // Static pages with explicit type casting for changeFrequency
   const staticPages = [
     {
@@ -22,10 +21,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${siteUrl}/contact`,
+      url: `${siteUrl}/projects`,
       lastModified: new Date(),
-      changeFrequency: 'yearly' as ChangeFrequency,
-      priority: 0.5,
+      changeFrequency: 'monthly' as ChangeFrequency,
+      priority: 0.9,
     },
   ];
 
