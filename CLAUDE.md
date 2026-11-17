@@ -70,4 +70,4 @@ src/
 - Use path aliases consistently: `@/components/`, `@/data/`
 
 ### Environment Variables
-- `NEXT_PUBLIC_SITE_URL` - Base URL for Open Graph images (defaults to localhost:3000)
+- `NEXT_PUBLIC_SITE_URL` - Base URL for the sitemap and Open Graph images. Unset on Vercel, `src/lib/site.ts` falls back to the known production URL (`portfolio-site-gustavodrls-projects.vercel.app`); locally it falls back to localhost:3000. Set it once a custom domain is live
